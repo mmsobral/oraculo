@@ -5,14 +5,13 @@ using namespace std;
 const int Maximo = 1000;
 
 int main() {
-    int inf=0;
-    int len=1+Maximo;
+    int inf=0, supp=Maximo;
     int n=0;
     bool achou = false;
     int tentativa;
 
     while (! achou) {
-        tentativa = inf+len/2;
+        tentativa = (inf+supp)/2;
         char op;
 
         cout << "Tentativa: " << tentativa << endl;
@@ -23,11 +22,10 @@ int main() {
                 achou = true;
                 break;
             case '<':
-                len = len - (len/2);
+                supp = tentativa-1;
                 break;
             case '>':
-                len = len - (len/2);
-                inf = tentativa;
+                inf = tentativa + 1;
                 break;
             default:
                 cout << op << " NÃO é uma opção válida !!!" << endl;
