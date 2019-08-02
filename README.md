@@ -1,0 +1,2 @@
+# oraculo
+Busca binária
