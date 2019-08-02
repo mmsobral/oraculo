@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/Oraculo.dir/main.cpp.o  -o Oraculo 
